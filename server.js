@@ -53,8 +53,8 @@ require("./app/routes/user-api-routes.js")(app);
 //load passport strategies
 require('./app/config/passport/passport.js')(passport, models.user);
  
-//start server listen
-app.listen(5000, function(err) {
+var PORT = process.env.PORT || 3000;
+app.listen(PORT, function(err) {
  
     if (!err)
         console.log("Site is live");
