@@ -1,1 +1,2 @@
-USE mcvo6alehvlghb03;
+DROP IF EXISTS characters_db;
+CREATE characters_db;

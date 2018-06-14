@@ -14,23 +14,17 @@
  
     },
  
-    "test": {
- 
-        "username": "",
- 
-        "password": null,
- 
-        "database": "",
- 
-        "host": "",
- 
-        "dialect": "mysql"
- 
-    },
- 
     "production": {
  
        "use_env_variable": "JAWSDB_URL",
+
+       "username": "rnd0apst84gpd6c0",
+
+       "password": "lftfj2ech6njc40p",
+
+       "database": "mcvo6alehvlghb03",
+
+       "host": "g3v9lgqa8h5nq05o.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
  
         "dialect": "mysql"
  
