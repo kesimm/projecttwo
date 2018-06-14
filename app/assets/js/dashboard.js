@@ -225,7 +225,7 @@ $("#view").on("click", function(event) {
             var row = $("<div>");
             row.addClass("character");
       
-            row.append("<p>Name: " + data[i].playerName);
+            row.append("<p>Name: "  + data[i].playerName);
             row.append("<p>Character Name: " + data[i].characterName);
             row.append("<p>" + charClass +" "+ race)
             row.append("<p>Strength: " + strength +" Strength Modifier: " + strengthmod + " Saving Throw: " + strengthThrow);

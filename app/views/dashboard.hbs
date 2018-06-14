@@ -1,38 +1,37 @@
 <!DOCTYPE html>
-<html>
- 
+<html lang="en">
+
 <head>
+    <meta charset="utf-8">
     <title>Your Characters</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-     <script src="/js/dashboard.js"></script>
-    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
-    
 </head>
- 
+
 <body>
-   <div class= "container">
-
-    
-<a class="btn btn-primary btn-lg" href="./new" role="button">Create a New Character</a>
-<a class="btn btn-primary btn-lg" role="button" id="view">See Characters</a>
-
-<div id="character-container">
-
+    <div class="container">
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="./">
+                <img src="/img/logo.png" width="30" height="30" class="d-inline-block align-top" alt=""> Your Characters
+            </a>
+        </nav>
 
 
+        <div class="row justify-content-lg-center" id="character-container">
+
+        </div>
 
 
-</div>
+        <a class="btn btn-primary btn-lg" href="./new" role="button">Create a New Character</a>
+        <a class="btn btn-primary btn-lg" role="button" id="view">See Characters</a>
+        <a class="btn btn-primary btn-lg" href="./logout" role="button">Logout</a>
 
 
+    </div>
+    <!-- container end div -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/js/dashboard.js"></script>
 
-
-
-
-   </div> <!-- container end div -->
-  
 </body>
- 
+
 </html>

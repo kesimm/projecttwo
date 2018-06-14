@@ -5,3 +5,9 @@ h1{
 body{
     background-image: url(../img/groovepaper.png);
 }
+
+.character{
+    border: solid, 5px, black;
+    padding: 10px;
+}
+
