@@ -3,9 +3,9 @@ $(document).ready(function() {
 
 $("#view").on("click", function(event) {
     event.preventDefault();
+    $("#character.container").empty();
     $.get("/api/characters", function(data) {
         console.log(data);
-        $("#character.container").empty();
         if (data.length !== 0) {
       
           for (var i = 0; i < data.length; i++) {
