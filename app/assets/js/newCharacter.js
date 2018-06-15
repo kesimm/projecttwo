@@ -32,5 +32,8 @@ $("#submitButton").on("click", function(event) {
     console.log(newCharacter);
   
     // Send an AJAX POST-request with jQuery
-    $.post("/api/characters", newCharacter)
+    $.post("/api/characters", newCharacter,);
+
+    $("#charForm")[0].reset();
+
 }) 

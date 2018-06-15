@@ -5,6 +5,7 @@ $("#view").on("click", function(event) {
     event.preventDefault();
     $.get("/api/characters", function(data) {
         console.log(data);
+        $("#character.container").empty();
         if (data.length !== 0) {
       
           for (var i = 0; i < data.length; i++) {
@@ -225,7 +226,7 @@ $("#view").on("click", function(event) {
             var row = $("<div>");
             row.addClass("character");
       
-            row.append("<p>Name: "  + data[i].playerName);
+            row.append("<h4>" + data[i].playerName + "'s Character Sheet");
             row.append("<p>Character Name: " + data[i].characterName);
             row.append("<p>" + charClass +" "+ race)
             row.append("<p>Strength: " + strength +" Strength Modifier: " + strengthmod + " Saving Throw: " + strengthThrow);
@@ -234,6 +235,8 @@ $("#view").on("click", function(event) {
             row.append("<p>Intelligence: " + intelligence + " Intelligence Modifier: " + intellmod + " Saving Throw: " + intellThrow);
             row.append("<p>Wisdom: " + wisdom + " Wisdom Modifier: " + wismod + " Saving Throw: " + wisThrow);
             row.append("<p>Charisma: " + charisma + " Charisma Modifier: " + charmod + " Saving Throw: " + charThrow);
+            row.append("<p>Skills: " + data[i].skill1 + " " + data[i].skill2);
+            row.append("<p>Backstory: " + data[i].backstory);
             row.append("<p>Initiative: " + (dexmod + 2));
             row.append("<p>Speed: " + speed);
             row.append("<p>Hit Points: " + hitPoints + " Hit dice: " + hitDice)
