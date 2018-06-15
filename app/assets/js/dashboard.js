@@ -3,7 +3,7 @@ $(document).ready(function() {
 
 $("#view").on("click", function(event) {
     event.preventDefault();
-    $("#character.container").empty();
+    $("#character-container").empty();
     $.get("/api/characters", function(data) {
         console.log(data);
         if (data.length !== 0) {
