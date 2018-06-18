@@ -14,6 +14,7 @@ module.exports = function(sequelize, DataTypes){
         wisdom: DataTypes.INTEGER,
         charisma: DataTypes.INTEGER,
         proficiencyBonus: DataTypes.INTEGER,
+        backstory: DataTypes.STRING,
         skill1: DataTypes.STRING,
         skill2: DataTypes.STRING
     });
